@@ -1,7 +1,7 @@
 replicaCount: 1
 
 image:
-  repository: us-central1-docker.pkg.dev/ordinal-virtue-472310-s6/my-docker-repo/python-app
+  repository: us-central1-docker.pkg.dev/saikiran-gcp/my-docker-repo/python-app
   tag: "latest"
   pullPolicy: IfNotPresent
 
@@ -16,3 +16,4 @@ resources:
 service:
   type: LoadBalancer
   port: 80
+  targetPort: 5000
