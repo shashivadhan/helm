@@ -1,0 +1,11 @@
+replicaCount: 2
+
+image:
+  repository: us-central1-docker.pkg.dev/ordinal-virtue-472310-s6/my-docker-repo/python-app
+  tag: latest
+  pullPolicy: Always
+
+service:
+  type: LoadBalancer
+  port: 80
+  targetPort: 8080
